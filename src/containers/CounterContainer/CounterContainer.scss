@@ -1,0 +1,64 @@
+@use "../../styles/variables" as *;
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-foreground;
+  width: 100%;
+  max-width: 350px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.employee-card {
+  height: 300px; /* Adjust the height as needed */
+}
+
+.counter-container {
+  height: 250px; /* Adjust the height as needed */
+}
+
+
+.counter-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.button-increment {
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  // margin: 0 5px;
+  // transition: background-color 0.3s ease;
+  flex: 1; // Make buttons expand to fill available space evenly
+  margin: 0.5rem; // Add some spacing around buttons
+
+  &:hover {
+    background-color: rgb(0, 104, 0);
+  }
+}
+
+.button-decrement {
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  // margin: 0 5px;
+  // transition: background-color 0.3s ease;
+  flex: 1; // Make buttons expand to fill available space evenly
+  margin: 0.5rem; // Add some spacing around buttons
+
+  &:hover {
+    background-color: rgb(135, 0, 0);  }
+}
+
+.counter-container p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
