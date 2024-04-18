@@ -1,7 +1,7 @@
 import EmployeeContainer from "./components/EmployeeContainer/EmployeeContainer"
 import { Employee } from "./types/Employee";
 
-// import the employees array 
+// import the employees array from data file location
 import employees from "./data/employees";
 
 const App = () => {

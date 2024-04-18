@@ -22,6 +22,7 @@
     .employee-card__id {
       font-size: 1.5rem;
       font-weight: normal;
+      color: $color-foreground; // block out id no.
     }
 
     .employee-card__name {
