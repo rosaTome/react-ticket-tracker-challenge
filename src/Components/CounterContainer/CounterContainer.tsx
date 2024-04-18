@@ -19,7 +19,7 @@ const CounterContainer = ({label}: CounterContainerProps) => {
     };
 
     return (
-        <div>
+        <div className="counter-container">
             <h2> Counter {count}</h2>
 
             <button className="button-increment" onClick={increment}>
