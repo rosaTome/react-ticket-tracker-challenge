@@ -16,8 +16,6 @@ const App = () => {
         <h1>Ticket Tracker</h1>
           <EmployeeContainer employees={AllEmployees}/>
     </div>
-
-   
   )
 }
 

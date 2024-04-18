@@ -24,7 +24,7 @@ const CounterContainer = ({}: CounterContainerProps) => {
 
     return (
         <div className="counter-container">
-            <h2> Counter {count}</h2>
+            <h2> Counter</h2>
 
             <button className="button-decrement" onClick={decrement}> -
             </button>
