@@ -1,4 +1,6 @@
-const team = [
+import Employee from "../types/Employee";
+
+const employees: Employee[] = [
     {
       id: 1,
       name: "Alima Miller",
@@ -50,5 +52,6 @@ const team = [
       role: "Hard Man",
     },
   ];
-  export default team;
+
+export default employees;
   
