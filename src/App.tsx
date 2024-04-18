@@ -1,22 +1,20 @@
-// import React from 'react'
+import EmployeeContainer from "./components/EmployeeContainer/EmployeeContainer"
+import { Employee } from "./types/Employee";
 
-import EmployeeCard from "./Components/EmployeeCard/EmployeeCard"
-import employees from "./data/employees"
+// import the employees array 
+import employees from "./data/employees";
 
 const App = () => {
+
+  // imported array into AllEmployees variable 
+  const AllEmployees: Employee[] = employees;
+
   return (
-    <div>
-        {/* <h1>Ticket Tracker</h1>
-        {employees && ( 
-            <EmployeeCard
-                id={`${employees[0].id}`}
-                name={`${employees[0].name}`}
-                role={`${employees[0].role}`}
-            />
-        )} */}
-      
+    <div className="app">
+        <h1>Ticket Tracker</h1>
+          <EmployeeContainer employees={AllEmployees}/>
     </div>
   )
 }
 
-export default App
+export default App;
