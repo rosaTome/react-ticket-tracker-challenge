@@ -1,8 +1,6 @@
 import EmployeeContainer from "./containers/EmployeeContainer/EmployeeContainer"
 import { Employee } from "./types/Employee";
 
-import CounterContainer from "./containers/CounterContainer/CounterContainer";
-
 // import the employees array from data file location
 import employees from "./data/employees";
 import "./App.scss"
