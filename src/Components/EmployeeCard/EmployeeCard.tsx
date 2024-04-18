@@ -1,4 +1,4 @@
-
+import "./EmployeeCard.scss";
 
 type EmployeeCardProps = {
   id: number;
