@@ -1,0 +1,9 @@
+.button-__cross {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }

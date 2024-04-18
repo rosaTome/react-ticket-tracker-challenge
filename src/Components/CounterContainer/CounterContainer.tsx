@@ -1,12 +1,13 @@
 import "./CounterContainer.scss";
-import incr from "../../assets/images/increment.png"
-import decr from "../../assets/images/decrement.png"
 
 import { useState } from "react"
 
+type CounterContainerProps = {
+    label: string;
 
+}
 
-const CounterContainer = () => {
+const CounterContainer = ({label}: CounterContainerProps) => {
     const [count, setCount] = useState(0); // initial state is 0
 
     const increment = () => {
@@ -20,18 +21,13 @@ const CounterContainer = () => {
     return (
         <div>
             <h2> Counter {count}</h2>
-            <img 
-                src={incr} 
-                alt="increment" 
-                className="counter-container__increment"
-                onClick={increment}
-                />
-            <img 
-                src={decr} 
-                alt="decrement" 
-                className="counter-container__decrement"
-                onClick={decrement}
-                />
+
+            <button className="button-increment" onClick={increment}>
+                {label} 
+            </button>
+            <button className="button-decrement" onClick={decrement}>
+                {label} -
+            </button>
 
         </div>
     )
